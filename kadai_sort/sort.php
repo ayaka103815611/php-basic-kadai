@@ -10,27 +10,26 @@
   <p>
       <?php
 
-      function sort_2way($arrays,$order){
-        $arrays=[15,4,18,23,10];
+      function sort_2way($nums,$order){
         if($order){
           echo '昇順にソートします。<br>';
-          sort($arrays);
-          foreach($arrays as $array){
-            echo $array.'<br>';
+          sort($nums);
+          foreach($nums as $num){
+            echo $num.'<br>';
           }
         }
         else{
           echo '降順にソートします。<br>';
-          rsort($arrays);
-          foreach($arrays as $array){
-            echo $array.'<br>';
+          rsort($nums);
+          foreach($nums as $num){
+            echo $num.'<br>';
           }
         }
       }
 
-      $arrays=[15,4,18,23,10];
-      sort_2way($arrays,TRUE);
-      sort_2way($arrays,FALSE);
+      $nums=[15,4,18,23,10];
+      sort_2way($nums,TRUE);
+      sort_2way($nums,FALSE);
       ?>
   </p>
 
