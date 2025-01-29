@@ -27,6 +27,8 @@
 
       $potato=new Food('potato',250);
       print_r($potato);
+      echo '<br>';
+
 
       // Animal
       class Animal {
@@ -47,7 +49,11 @@
 
       $dog= new Animal('dog',60,5000);
       print_r($dog);
+      echo '<br>';
 
+      // メソッドの呼び出し
+      $potato->show_price();
+      $dog->show_height();
 
       ?>
   </p>
