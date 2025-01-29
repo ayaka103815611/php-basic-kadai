@@ -9,18 +9,19 @@
 <body>
   <p>
       <?php
-
-      function sort_2way($nums,$order){
+      
+      function sort_2way($array,$order){
+        $nums=[15,4,18,23,10];
         if($order){
           echo '昇順にソートします。<br>';
-          sort($nums);
+          sort($array);
           foreach($nums as $num){
             echo $num.'<br>';
           }
         }
         else{
           echo '降順にソートします。<br>';
-          rsort($nums);
+          rsort($array);
           foreach($nums as $num){
             echo $num.'<br>';
           }
